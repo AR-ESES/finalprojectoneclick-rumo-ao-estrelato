@@ -1,49 +1,72 @@
-let spaceship;
-let meteorites1 = []; //obstacle Type 1 List, duplicate with different name if you want more
+let boneco;
+let adeversario1 = []; //obstacle Type 1 List, duplicate with different name if you want more
 let obstaclesCleared;
 let obstaclesHit;
+let backgroundImage;
+
+let posFundo;
+let velFundo;
 
 let frameCountBettwenObstaclesType1 = 20;
 let nivelDeDificuldade = 1;
 
+function preload() {
+  backgroundImage = loadImage("estadionovo2.png");
+}
+
 function setup() {
   var canvas = createCanvas(800, 600);
-  spaceship = new Character();
+  boneco = new Character();
 
   obstaclesCleared = 0;
   obstaclesHit = 0;
 
-  meteorites1.push(new Obstacle());
+  posFundo = 0;
+  velFundo = 10;
+
+  adeversario1.push(new Obstacle());
 }
 
 function draw() {
   clear();
-  background(0, 20, 50);
+  background(255);
+  image(backgroundImage,posFundo,0,height*9.99,height);
 
-  spaceship.show();
-  spaceship.update();
+  frameCountBettwenObstaclesType1 = int(random(30,70));
+
+
+  boneco.show();
+  boneco.update();
 
   if (frameCount % frameCountBettwenObstaclesType1 == 0) {
-    meteorites1.push(new Obstacle());
+    adeversario1.push(new Obstacle());
   }
 
-  for (var i = meteorites1.length - 1; i >= 0; i--) {
-    meteorites1[i].show();
-    meteorites1[i].update();
+  for (var i = adeversario1.length - 1; i >= 0; i--) {
+    adeversario1[i].show();
+    adeversario1[i].update();
 
-    if (meteorites1[i].hits(spaceship)) {
+    if (adeversario1[i].hits(boneco)) {
       obstaclesHit++;
     }
 
-    if (meteorites1[i].offscreen()) {
-      meteorites1.splice(i, 1);
+    if (adeversario1[i].offscreen()) {
+      adeversario1.splice(i, 1);
       obstaclesCleared++;
     }
   }
+
+if(posFundo<=-height*9.99){
+  posFundo = 0;
+}
+else{
+  posFundo=posFundo-velFundo;
+}
+
 }
 
 function keyPressed() {
   if (key === " ") {
-    spaceship.goUp();
+    boneco.goUp();
   }
 }

@@ -1,15 +1,13 @@
-//This is an obstacle template.... duplicate for more.
-
 function Obstacle() {
-  this.x = width;
-  this.y = random(height);
-  this.w = random(30, 80);
+  this.x = width; // Start the obstacle off-screen initially
+  this.y = height / 1.45; // Align the obstacle's vertical position with the character
+  this.w = 85; // Fixed width for all obstacles
   this.topMin = 50;
   this.botMin = height - 50;
   this.gapStart = random(this.topMin, this.botMin);
   this.gapLength = 200;
   this.speed = 10;
-  this.img2 = loadImage("asteroid.png");
+  this.img2 = loadImage("Adeversario1.png");
 
   this.show = function () {
     fill(0);
@@ -40,11 +38,14 @@ function Obstacle() {
     return this.x < -this.w;
   };
 
-  this.hits = function (obstacle) {
-    if (obstacle.y > this.y - this.w / 2 && obstacle.y < this.y + this.w / 2) {
+  this.hits = function (character) {
+    if (
+      character.y > this.y - this.w / 2 &&
+      character.y < this.y + this.w / 2
+    ) {
       if (
-        obstacle.x > this.x - this.w / 2 &&
-        obstacle.x < this.x + this.w / 2
+        character.x + character.diam / 2 > this.x &&
+        character.x - character.diam / 2 < this.x + this.w
       ) {
         this.highlight = true;
         return true;
