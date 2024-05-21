@@ -1,13 +1,13 @@
 function Obstacle() {
   this.x = width; // Start the obstacle off-screen initially
-  this.y = height / 1.45; // Align the obstacle's vertical position with the character
-  this.w = 85; // Fixed width for all obstacles
+  this.y = height / 1.35; // Align the obstacle's vertical position with the character
+  this.w = 125; // Fixed width for all obstacles
   this.topMin = 50;
   this.botMin = height - 50;
   this.gapStart = random(this.topMin, this.botMin);
   this.gapLength = 200;
   this.speed = 10;
-  this.img2 = loadImage("Adeversario1.png");
+  this.img2 = loadImage("oponente1.png");
 
   this.show = function () {
     fill(0);

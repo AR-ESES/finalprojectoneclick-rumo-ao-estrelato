@@ -2,9 +2,9 @@ function Character() {
   this.y = height / 2;
   this.x = width / 4; // começar mais a esquerda ou direita
   this.push = 1.75;
-  this.lift = -30;
+  this.lift = -44;
   this.velocity = 0;
-  this.diam = 80; //Tamanho do boneco
+  this.diam = 120; //Tamanho do boneco
   this.minHeight = 200; //altura em relação ao chao
   this.img1 = loadImage("boneco2.png"); // First image
   this.img2 = loadImage("boneco3.png"); // Second image

@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-  var canvas = createCanvas(800, 600);
+  var canvas = createCanvas(windowWidth, windowHeight);
   boneco = new Character();
 
   obstaclesCleared = 0;
@@ -32,7 +32,7 @@ function draw() {
   background(255);
   image(backgroundImage,posFundo,0,height*9.99,height);
 
-  frameCountBettwenObstaclesType1 = int(random(30,70));
+  frameCountBettwenObstaclesType1 = int(random(50,70)); //controla frequencia de opps
 
 
   boneco.show();
