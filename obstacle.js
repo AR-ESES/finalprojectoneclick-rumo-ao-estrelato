@@ -1,6 +1,6 @@
 function Obstacle() {
   this.x = width; // Start the obstacle off-screen initially
-  this.y = height / 1.35; // Align the obstacle's vertical position with the character
+  this.y = height * 0.80; // Align the obstacle's vertical position with the character
   this.w = 125; // Fixed width for all obstacles
   this.topMin = 50;
   this.botMin = height - 50;
@@ -12,28 +12,20 @@ function Obstacle() {
   this.show = function () {
     fill(0);
     if (this.highlight) {
-      //desenha duas circunferencias com o impacto...
+      // Draw two circles to indicate impact
       noFill();
       stroke(255);
       strokeWeight(3);
-      ellipse(
-        this.x + this.w / 2,
-        this.y + this.w / 2,
-        this.w * 1.2,
-        this.w * 1.2
-      );
-      ellipse(
-        this.x + this.w / 2,
-        this.y + this.w / 2,
-        this.w * 1.5,
-        this.w * 1.5
-      );
+      ellipse(this.x + this.w / 2, this.y + this.w / 2, this.w * 1.2, this.w * 1.2);
+      ellipse(this.x + this.w / 2, this.y + this.w / 2, this.w * 1.5, this.w * 1.5);
     }
     image(this.img2, this.x, this.y, this.w, this.w);
   };
+
   this.update = function () {
     this.x -= this.speed;
   };
+
   this.offscreen = function () {
     return this.x < -this.w;
   };
@@ -55,3 +47,4 @@ function Obstacle() {
     return false;
   };
 }
+
