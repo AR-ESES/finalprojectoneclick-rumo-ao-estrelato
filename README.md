@@ -19,8 +19,6 @@ O jogo foi desenhado com um conjunto de layouts que incluem:
 
 ![Layout1](cenario1.jpg)
 
-![Layout5](cenario5.jpg)
-
 ![Layout2](cenario2.jpg)
 
 ![Layout3](cenario3.jpg)
@@ -35,7 +33,7 @@ Abaixo, demonstramos o nosso "moodboard" que serviu para nos inspirarmos e tirar
 
 
 
-### Personagens e Artefactos
+### Personagens, obstáculos e cenários
 Aqui demonstramos as várias variações que o personagem principal tem ao longo da sua jornada, bem como os diferentes obstáculos e estádios que encontra.
 
 <p align="center">
@@ -48,22 +46,27 @@ Aqui demonstramos as várias variações que o personagem principal tem ao longo
 <p align="center">
   <img src="oponente1.png" alt="opp1" width="width/2" height="150">
   <img src="oponente2.png" alt="opp2" width="width/2" height="150">
-  <img src=".png" alt="opp3" width="width/2" height="100">
-   <img src="boneco2.png" alt="Boneco2" width="150" height="150">
+  <img src="Oponente3.png" alt="opp3" width="width/2" height="150">
+   <img src="cone.png" alt="opp4" width="150" height="150">
 </p>
+
+![est1](EstadioTreino.png)
+![est2](EstadioBenfica.png)
+![est3](EstadioPorto.png)
+![est4](EstadioSporting.png)
+
 
 
 ### Identidade Gráfica
-A identidade gráfica do jogo foi desenvolvida para...
-[Inclua exemplos de identidade gráfica aplicada, se aplicável]
+Em relação à identidade gráfica criámos um logótipo que consiste no nome do nosso jogo estilizado com um grafismo semelhante ao do mesmo.
+
+<p align="center">
+  <img src="logofinal.png" alt="logo" width="width" height="150">
+</p>
+
+Abaixo apresentamos ainda a palete de cores utilizada no jogo.
+
+![Pall](Palette.png)
 
 ## Vídeo Promocional
-Para documentar a utilização do jogo, criamos um vídeo promocional de 30 segundos que pode ser visto [aqui](link_para_o_video).
-
-## Instruções de Uso
-
-### Pré-requisitos
-- Navegador web atualizado
-- Git
-
-### Como Jogar
+Para documentar a utilização do jogo, criámos um vídeo promocional de 30 segundos que pode ser visto [aqui](https://youtu.be/uP9xiYDG8j4).
