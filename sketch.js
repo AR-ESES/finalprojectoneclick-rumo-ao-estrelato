@@ -35,7 +35,7 @@ function setup() {
   let aspectRatio = backgroundImage.width / backgroundImage.height;
   bgWidth = windowWidth;
   bgHeight = windowWidth / aspectRatio;
-  
+
   if (bgHeight < windowHeight) {
     bgHeight = windowHeight;
     bgWidth = windowHeight * aspectRatio;
@@ -58,7 +58,7 @@ function draw() {
     posFundo = 0;
   }
 
-  frameCountBettwenObstaclesType1 = int(random(50, 70)); // Control frequency of obstacles
+  frameCountBettwenObstaclesType1 = int(random(65, 70)); // Control frequency of obstacles
 
   boneco.show();
   boneco.update();
@@ -73,11 +73,13 @@ function draw() {
 
     if (adeversario1[i].hits(boneco)) {
       obstaclesHit++;
+      points += 0; // Add 0 points for hitting the obstacle
+      adeversario1[i].hit = true; // Mark the obstacle as hit
     }
 
     if (adeversario1[i].offscreen()) {
-      if (!adeversario1[i].highlight) {
-        points += 10; // Add points for cleared obstacle
+      if (!adeversario1[i].hit) {
+        points += 10; // Add points for cleared obstacle if it wasn't hit
       }
       adeversario1.splice(i, 1);
       obstaclesCleared++;
@@ -102,7 +104,7 @@ function draw() {
   // Center the text within the image
   let textX = counterX + counterWidth / 2;
   let textY = counterY + counterHeight / 1.75;
-  text(points, textX, textY); 
+  text(points, textX, textY);
 }
 
 function keyPressed() {
@@ -121,8 +123,5 @@ function windowResized() {
     adeversario1[i].gapStart = random(adeversario1[i].topMin, adeversario1[i].botMin);
   }
 }
-
-
-
 
 
