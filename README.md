@@ -15,10 +15,23 @@ O objetivo final de "Rumo ao Estrelato" é simples: completar os níveis e ter u
 O jogo "Rumo ao Estrelato" promete proporcionar bastante diversão para jogadores de todas as idades.
 
 ## Layouts e Design de Comunicação
-O jogo foi desenhado com um conjunto de layouts que incluem...
+O jogo foi desenhado com um conjunto de layouts que incluem:
 
-### Ambiente de Jogo
-[Descreva o ambiente de jogo e inclua imagens, se aplicável]
+![Layout1](cenario1.jpg)
+
+![Layout5](cenario5.jpg)
+
+![Layout2](cenario2.jpg)
+
+![Layout3](cenario3.jpg)
+
+![Layout4](cenario4.jpg)
+
+### Moodboard
+No nosso jogo inspirámo-nos essencialmente no clássico jogo do dinossauro do google e optámos por utilizar um estilo gráfico mais retro.
+Abaixo, demonstramos o nosso "moodboard" que serviu para nos inspirarmos e tirar ideias durante a realização da parte gráfica do jogo.
+
+
 
 ### Personagens e Artefactos
 [Descreva as personagens e artefactos e inclua imagens, se aplicável]
