@@ -1,11 +1,11 @@
 function Character() {
   this.y = height / 2;
   this.x = width / 4; // Start more to the left or right
-  this.push = 1.75;
-  this.lift = -44;
+  this.push = 1.65;
+  this.lift = -75;
   this.velocity = 0;
-  this.diam = 120; // Size of the character
-  this.minHeight = height * 0.2; // Height in relation to the ground
+  this.diam = 285; // Size of the character
+  this.minHeight = height * 0.3; // Height in relation to the ground
   this.img1 = loadImage("boneco2.png"); // First image
   this.img2 = loadImage("boneco3.png"); // Second image
   this.jumpImg = loadImage("boneco1.png"); // Jumping image

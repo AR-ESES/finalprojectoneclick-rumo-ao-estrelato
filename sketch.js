@@ -1,5 +1,6 @@
 let boneco;
-let adeversario1 = []; // obstacle Type 1 List
+let obstaclesType1 = []; // Type 1 Obstacle List
+let obstaclesType2 = []; // Type 2 Obstacle List
 let obstaclesCleared;
 let obstaclesHit;
 let backgroundImage;
@@ -7,15 +8,16 @@ let points;
 let posFundo;
 let velFundo;
 let bgWidth, bgHeight;
-let frameCountBettwenObstaclesType1 = 20;
+let frameCountBetweenObstaclesType1 = 20;
+let frameCountBetweenObstaclesType2 = 60; // Adjust as needed
 let nivelDeDificuldade = 1;
 let counterImage; // Image for the counter
 let upheavalFont; // Variable to hold the font
 
 function preload() {
   backgroundImage = loadImage("estadionovo2.png");
-  counterImage = loadImage("scoreboardD-01.png"); // Replace with your image file
-  upheavalFont = loadFont("upheavtt.ttf"); // Replace with the file name of your font
+  counterImage = loadImage("scoreboardD-01.png");
+  upheavalFont = loadFont("upheavtt.ttf");
 }
 
 function setup() {
@@ -24,12 +26,13 @@ function setup() {
 
   obstaclesCleared = 0;
   obstaclesHit = 0;
-  points = 0; // Initialize points
+  points = 0;
 
   posFundo = 0;
   velFundo = 5;
 
-  adeversario1.push(new Obstacle());
+  obstaclesType1.push(new Obstacle());
+  obstaclesType2.push(new ObstacleType2());
 
   // Calculate the background image dimensions while preserving the aspect ratio
   let aspectRatio = backgroundImage.width / backgroundImage.height;
@@ -58,37 +61,33 @@ function draw() {
     posFundo = 0;
   }
 
-  frameCountBettwenObstaclesType1 = int(random(65, 70)); // Control frequency of obstacles
+  let frameCountBetweenObstaclesType1 = 200; // Increase the frame count for Type 1 obstacles
+  let frameCountBetweenObstaclesType2 = 235; // Increase the frame count for Type 2 obstacles
+  
+
 
   boneco.show();
   boneco.update();
 
-  if (frameCount % frameCountBettwenObstaclesType1 == 0) {
-    adeversario1.push(new Obstacle());
+  // Spawn Type 1 obstacles
+  if (frameCount % frameCountBetweenObstaclesType1 == 0) {
+    obstaclesType1.push(new Obstacle());
   }
 
-  for (var i = adeversario1.length - 1; i >= 0; i--) {
-    adeversario1[i].show();
-    adeversario1[i].update();
-
-    if (adeversario1[i].hits(boneco)) {
-      obstaclesHit++;
-      points += 0; // Add 0 points for hitting the obstacle
-      adeversario1[i].hit = true; // Mark the obstacle as hit
-    }
-
-    if (adeversario1[i].offscreen()) {
-      if (!adeversario1[i].hit) {
-        points += 10; // Add points for cleared obstacle if it wasn't hit
-      }
-      adeversario1.splice(i, 1);
-      obstaclesCleared++;
-    }
+  // Spawn Type 2 obstacles
+  if (frameCount % frameCountBetweenObstaclesType2 == 0) {
+    obstaclesType2.push(new ObstacleType2());
   }
+
+  // Handle Type 1 obstacles
+  handleObstacles(obstaclesType1);
+
+  // Handle Type 2 obstacles
+  handleObstacles(obstaclesType2);
 
   // Display points counter image and points in the top left corner
-  let counterWidth = 180; // Adjust the width as needed
-  let counterHeight = 100; // Adjust the height as needed
+  let counterWidth = 180;
+  let counterHeight = 100;
   let counterX = 10;
   let counterY = 10;
 
@@ -116,12 +115,38 @@ function keyPressed() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   // Adjust obstacle positions on window resize
-  for (let i = 0; i < adeversario1.length; i++) {
-    adeversario1[i].y = height * 0.74;
-    adeversario1[i].topMin = 50;
-    adeversario1[i].botMin = height - 50;
-    adeversario1[i].gapStart = random(adeversario1[i].topMin, adeversario1[i].botMin);
+  for (let i = 0; i < obstaclesType1.length; i++) {
+    obstaclesType1[i].y = height * 0.74;
+    obstaclesType1[i].topMin = 50;
+    obstaclesType1[i].botMin = height - 50;
+    obstaclesType1[i].gapStart = random(obstaclesType1[i].topMin, obstaclesType1[i].botMin);
+  }
+  for (let i = 0; i < obstaclesType2.length; i++) {
+    // Adjust positions for Type 2 obstacles if needed
   }
 }
+
+function handleObstacles(obstacleList) {
+  for (let i = obstacleList.length - 1; i >= 0; i--) {
+    obstacleList[i].show();
+    obstacleList[i].update();
+
+    if (obstacleList[i].hits(boneco)) {
+      obstaclesHit++;
+      points += 0;
+      obstacleList[i].hit = true;
+    }
+
+    if (obstacleList[i].offscreen()) {
+      if (!obstacleList[i].hit) {
+        points += 10;
+      }
+      obstacleList.splice(i, 1);
+      obstaclesCleared++;
+    }
+  }
+}
+
+
 
 
