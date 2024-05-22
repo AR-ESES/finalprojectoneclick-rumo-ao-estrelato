@@ -31,10 +31,27 @@ O jogo foi desenhado com um conjunto de layouts que incluem:
 No nosso jogo inspirámo-nos essencialmente no clássico jogo do dinossauro do google e optámos por utilizar um estilo gráfico mais retro.
 Abaixo, demonstramos o nosso "moodboard" que serviu para nos inspirarmos e tirar ideias durante a realização da parte gráfica do jogo.
 
+![moodboard](moodboard.png)
+
 
 
 ### Personagens e Artefactos
-[Descreva as personagens e artefactos e inclua imagens, se aplicável]
+Aqui demonstramos as várias variações que o personagem principal tem ao longo da sua jornada, bem como os diferentes obstáculos e estádios que encontra.
+
+<p align="center">
+  <img src="bonecotreino2.png" alt="Boneco1" width="width/2" height="150">
+  <img src="boneco2sporting.png" alt="Boneco3" width="width/2" height="150">
+  <img src="porto2.png" alt="Boneco4" width="width/2" height="150">
+   <img src="boneco2.png" alt="Boneco2" width="150" height="150">
+</p>
+
+<p align="center">
+  <img src="oponente1.png" alt="opp1" width="width/2" height="150">
+  <img src="oponente2.png" alt="opp2" width="width/2" height="150">
+  <img src=".png" alt="opp3" width="width/2" height="100">
+   <img src="boneco2.png" alt="Boneco2" width="150" height="150">
+</p>
+
 
 ### Identidade Gráfica
 A identidade gráfica do jogo foi desenvolvida para...
