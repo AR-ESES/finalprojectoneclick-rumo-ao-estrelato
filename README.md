@@ -33,7 +33,7 @@ Abaixo, demonstramos o nosso "moodboard" que serviu para nos inspirarmos e tirar
 
 
 
-### Personagens, obstáculos e cenários
+### Personagens, obstáculos, cenários e interface
 Aqui demonstramos as várias variações que o personagem principal tem ao longo da sua jornada, bem como os diferentes obstáculos e estádios que encontra.
 
 <p align="center">
@@ -55,7 +55,9 @@ Aqui demonstramos as várias variações que o personagem principal tem ao longo
 ![est3](EstadioPorto.png)
 ![est4](EstadioSporting.png)
 
-
+<p align="center">
+  <img src="scoreboardD-01.png" alt="score" width="width" height="150">
+</p>
 
 ### Identidade Gráfica
 Em relação à identidade gráfica criámos um logótipo que consiste no nome do nosso jogo estilizado com um grafismo semelhante ao do mesmo.
