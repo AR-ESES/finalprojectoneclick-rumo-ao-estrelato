@@ -59,6 +59,10 @@ Aqui demonstramos as várias variações que o personagem principal tem ao longo
   <img src="scoreboardD-01.png" alt="score" width="width" height="150">
 </p>
 
+<p align="center">
+<img src="3vidas-01.png" alt="3vida" width="width" height="150"> <img src="2vidas-01.png" alt="2vida" width="width" height="150"> <img src="1vida-01.png" alt="1vida" width="width" height="150">
+</p>
+
 ### Identidade Gráfica
 Em relação à identidade gráfica criámos um logótipo que consiste no nome do nosso jogo estilizado com um grafismo semelhante ao do mesmo.
 
@@ -68,7 +72,25 @@ Em relação à identidade gráfica criámos um logótipo que consiste no nome d
 
 Abaixo apresentamos ainda a palete de cores utilizada no jogo.
 
-![Pall](Palette.png)
+![Pall](Palettev2.png)
+
+Abaixo apresentamos exemplos de uso da identidade gráfica do nosso jogo.
+
+<p align="center">
+<img src="t-shirt2.png" alt="2s" width="width" height="250"> <img src="t-shirt1.png" alt="1s" width="width" height="250"> <img src="t-shirt3.png" alt="3s" width="width" height="250">
+</p>
+
+<p align="center">
+<img src="cartoes1.png" alt="c1" width="width" height="250"> <img src="cartoes2.png" alt="c2" width="width" height="250"> <img src="cartoes3.png" alt="c3" width="width" height="250">
+</p>
+
+<p align="center">
+<img src="bone1.png" alt="cap1" width="width" height="250"> <img src="bone2.png" alt="cap2" width="width" height="250">
+</p>
+
+<p align="center">
+<img src="fita porta chaves.png" alt="PC1" width="width" height="250"> <img src="Tapete.jpg" alt="MP1" width="width" height="250">
+</p>
 
 ## Vídeo Promocional
 Para documentar a utilização do jogo, criámos um vídeo promocional de 30 segundos que pode ser visto [aqui](https://youtu.be/uP9xiYDG8j4).
