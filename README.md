@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ipevJCXR)
 # Rumo ao Estrelato
-
+## Este jogo foi realizado por: João Lúcio nº220001380 | Tiago Figueiredo nº220000754
 ## Sinopse
 No nosso jogo "Rumo ao Estrelato", o utilizador assume o papel de um jovem talento do futebol em busca de se tornar uma lenda nos relvados. Com um simples clique, os utilizadores controlam o jogador enquanto ele evita obstáculos e desafios no seu caminho até o estrelato.
 
@@ -19,8 +19,6 @@ O jogo foi desenhado com um conjunto de layouts que incluem:
 
 ![Layout1](cenario1.jpg)
 
-![Layout5](cenario5.jpg)
-
 ![Layout2](cenario2.jpg)
 
 ![Layout3](cenario3.jpg)
@@ -35,7 +33,7 @@ Abaixo, demonstramos o nosso "moodboard" que serviu para nos inspirarmos e tirar
 
 
 
-### Personagens e Artefactos
+### Personagens, obstáculos, cenários e interface
 Aqui demonstramos as várias variações que o personagem principal tem ao longo da sua jornada, bem como os diferentes obstáculos e estádios que encontra.
 
 <p align="center">
@@ -48,22 +46,29 @@ Aqui demonstramos as várias variações que o personagem principal tem ao longo
 <p align="center">
   <img src="oponente1.png" alt="opp1" width="width/2" height="150">
   <img src="oponente2.png" alt="opp2" width="width/2" height="150">
-  <img src=".png" alt="opp3" width="width/2" height="100">
-   <img src="boneco2.png" alt="Boneco2" width="150" height="150">
+  <img src="Oponente3.png" alt="opp3" width="width/2" height="150">
+   <img src="cone.png" alt="opp4" width="150" height="150">
 </p>
 
+![est1](EstadioTreino.png)
+![est2](EstadioBenfica.png)
+![est3](EstadioPorto.png)
+![est4](EstadioSporting.png)
+
+<p align="center">
+  <img src="scoreboardD-01.png" alt="score" width="width" height="150">
+</p>
 
 ### Identidade Gráfica
-A identidade gráfica do jogo foi desenvolvida para...
-[Inclua exemplos de identidade gráfica aplicada, se aplicável]
+Em relação à identidade gráfica criámos um logótipo que consiste no nome do nosso jogo estilizado com um grafismo semelhante ao do mesmo.
+
+<p align="center">
+  <img src="logofinal.png" alt="logo" width="width" height="150">
+</p>
+
+Abaixo apresentamos ainda a palete de cores utilizada no jogo.
+
+![Pall](Palette.png)
 
 ## Vídeo Promocional
-Para documentar a utilização do jogo, criamos um vídeo promocional de 30 segundos que pode ser visto [aqui](link_para_o_video).
-
-## Instruções de Uso
-
-### Pré-requisitos
-- Navegador web atualizado
-- Git
-
-### Como Jogar
+Para documentar a utilização do jogo, criámos um vídeo promocional de 30 segundos que pode ser visto [aqui](https://youtu.be/uP9xiYDG8j4).
