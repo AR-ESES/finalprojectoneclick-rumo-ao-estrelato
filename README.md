@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ipevJCXR)
 # Rumo ao Estrelato
-
+## Este jogo foi realizado por: João Lúcio nº220001380 | Tiago Figueiredo nº220000754
 ## Sinopse
 No nosso jogo "Rumo ao Estrelato", o utilizador assume o papel de um jovem talento do futebol em busca de se tornar uma lenda nos relvados. Com um simples clique, os utilizadores controlam o jogador enquanto ele evita obstáculos e desafios no seu caminho até o estrelato.
 
