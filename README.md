@@ -94,3 +94,6 @@ Abaixo apresentamos exemplos de uso da identidade gráfica do nosso jogo.
 
 ## Vídeo Promocional
 Para documentar a utilização do jogo, criámos um vídeo promocional de 30 segundos que pode ser visto [aqui](https://youtu.be/uP9xiYDG8j4).
+
+## Link para o jogo
+https://ar-eses.github.io/finalprojectoneclick-rumo-ao-estrelato/
